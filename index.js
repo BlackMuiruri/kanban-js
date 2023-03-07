@@ -31,8 +31,8 @@ function addTaskCard(task, index) {
 
 }
 
-Kanban.getAllTasks().forEach((tasks, index) => {
-    tasks.forEach(task => {
+Kanban.getAllTasks().forEach((column, index) => {
+    column.forEach(task => {
         addTaskCard(task, index);
     });
 });
